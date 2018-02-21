@@ -34,28 +34,19 @@
         <asp:Label ID="DEPARTMENT_ID_lb" runat="server" Text="DEPARTMENT_ID"></asp:Label>
         <asp:TextBox ID="DEPARTMENT_ID" runat="server"></asp:TextBox>
         <br />
-        <asp:Button ID="create" runat="server" Text="Nuevo" />  
+        <asp:Button ID="create" runat="server" Text="Nuevo" OnClick="create_Click" />  
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  
-        <asp:Button ID="read" runat="server" Text="Mostrar" />   
+        <asp:Button ID="read" runat="server" Text="Mostrar" OnClick="read_Click" />   
         &nbsp;&nbsp;&nbsp;&nbsp;   
         <asp:Button ID="update" runat="server" Text="Actualizar" />
         &nbsp;&nbsp;&nbsp;
         <asp:Button ID="delete" runat="server" Text="Borrar" />
         <br />
     </div>
-        <asp:GridView ID="GridView1" runat="server" CellPadding="4" ForeColor="#333333" GridLines="None">
-            <AlternatingRowStyle BackColor="White" />
-            <EditRowStyle BackColor="#2461BF" />
-            <FooterStyle BackColor="#507CD1" Font-Bold="True" ForeColor="White" />
-            <HeaderStyle BackColor="#507CD1" Font-Bold="True" ForeColor="White" />
-            <PagerStyle BackColor="#2461BF" ForeColor="White" HorizontalAlign="Center" />
-            <RowStyle BackColor="#EFF3FB" />
-            <SelectedRowStyle BackColor="#D1DDF1" Font-Bold="True" ForeColor="#333333" />
-            <SortedAscendingCellStyle BackColor="#F5F7FB" />
-            <SortedAscendingHeaderStyle BackColor="#6D95E1" />
-            <SortedDescendingCellStyle BackColor="#E9EBEF" />
-            <SortedDescendingHeaderStyle BackColor="#4870BE" />
+        <asp:GridView ID="GridView1" runat="server">
         </asp:GridView>
+        <asp:Label ID="lbmensaje" runat="server" Text="Mensaje:"></asp:Label>
+        <br />
     </form>
 </body>
 </html>
